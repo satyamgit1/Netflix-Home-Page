@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 80px;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #2c003e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+              
+            padding: 29px;
+        }
+
+        .sidebar label {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            display: block;
+        }
+
+        .content {
+        	
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+               
+        }
+
+        .content-item {
+        	
+            display: none;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+        
+        #css-size{
+        	  margin: 20px 0;
+            width: 294px; 
+            height: 191px;
+        	
+        }
+          #js-size{
+        	  margin: 20px 0;
+            width: 400px; 
+            height: 191px;
+        	
+        }
+          #nodejs-size{
+        	  margin: 20px 0;
+            width: 294px; 
+            height: 191px;
+        	
+        }
+          #react-size{
+        	  margin: 20px 0;
+            width: 325px; 
+            height: 191px;
+        	
+        }
+
+        #html:checked ~ .content #content-html,
+        #css:checked ~ .content #content-css,
+        #javascript:checked ~ .content #content-javascript,
+        #react:checked ~ .content #content-react,
+        #node:checked ~ .content #content-node {
+            display: block;
+        }
+
+        .content-item img {
+            
+            margin: 20px 0;
+            width: 200px; 
+            height: 191px;
+          
+        }
+         .content-item h1 {
+         	margin-top: -37px;
+         	margin-bottom: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="tab" id="html" checked>
+        <input type="radio" name="tab" id="css">
+        <input type="radio" name="tab" id="javascript">
+        <input type="radio" name="tab" id="react">
+        <input type="radio" name="tab" id="node">
+
+        <div class="sidebar">
+            <label for="html">HTML</label>
+            <label for="css">CSS</label>
+            <label for="javascript">JAVASCRIPT</label>
+            <label for="react">REACTJS</label>
+            <label for="node">NODEJS</label>
+        </div>
+
+        <div class="content">
+            <div class="content-item" id="content-html">
+                <h1>HTML Document</h1>
+                <img src="html.png" alt="HTML Logo">
+                <p> html Lorem ipsum dolor sit amet. Est veniam odio sit quibusdam inventore est dolor alias. Qui delectus natus id reprehenderit temporibus ad voluptate facilis. In perspiciatis illum non similique sint ut Quis adipisci. Rem dolor libero sed nihil laboriosam ut iste dolor!
+                Ut culpa provident est veritatis fuga aut facilis consequatur ut quidem enim aut mollitia assumenda est itaque ratione vel magnam accusantium. Est impedit iure et magnam consequatur et eaque labore est voluptates deleniti. Non quia possimus et nostrum iure et dolor amet et numquam maxime. Quo repellat eius aut delectus deserunt est dignissimos saepe.
+              
+            </div>
+            <div class="content-item" id="content-css">
+                <h1>CSS Document</h1>
+                <img src="css.jpg" alt="CSS Logo" id="css-size">
+               <p> css Lorem ipsum dolor sit amet. Est veniam odio sit quibusdam inventore est dolor alias. Qui delectus natus id reprehenderit temporibus ad voluptate facilis. In perspiciatis illum non similique sint ut Quis adipisci. Rem dolor libero sed nihil laboriosam ut iste dolor!
+                Ut culpa provident est veritatis fuga aut facilis consequatur ut quidem enim aut mollitia assumenda est itaque ratione vel magnam accusantium. Est impedit iure et magnam consequatur et eaque labore est voluptates deleniti. Non quia possimus et nostrum iure et dolor amet et numquam maxime. Quo repellat eius aut delectus deserunt est dignissimos saepe.
+            </div>
+            <div class="content-item" id="content-javascript">
+                <h1>JAVASCRIPT Document</h1>
+                <img src="js.png" alt="JavaScript Logo" id="js-size">
+                <p> js Lorem ipsum dolor sit amet. Est veniam odio sit quibusdam inventore est dolor alias. Qui delectus natus id reprehenderit temporibus ad voluptate facilis. In perspiciatis illum non similique sint ut Quis adipisci. Rem dolor libero sed nihil laboriosam ut iste dolor!
+                Ut culpa provident est veritatis fuga aut facilis consequatur ut quidem enim aut mollitia assumenda est itaque ratione vel magnam accusantium. Est impedit iure et magnam consequatur et eaque labore est voluptates deleniti. Non quia possimus et nostrum iure et dolor amet et numquam maxime. Quo repellat eius aut delectus deserunt est dignissimos saepe.
+            </div>
+            <div class="content-item" id="content-react">
+                <h1>REACT JS Document</h1>
+                <img src="react.jpg" alt="React JS Logo" id="react-size">
+                <p> reactjs Lorem ipsum dolor sit amet. Est veniam odio sit quibusdam inventore est dolor alias. Qui delectus natus id reprehenderit temporibus ad voluptate facilis. In perspiciatis illum non similique sint ut Quis adipisci. Rem dolor libero sed nihil laboriosam ut iste dolor!
+                Ut culpa provident est veritatis fuga aut facilis consequatur ut quidem enim aut mollitia assumenda est itaque ratione vel magnam accusantium. Est impedit iure et magnam consequatur et eaque labore est voluptates deleniti. Non quia possimus et nostrum iure et dolor amet et numquam maxime. Quo repellat eius aut delectus deserunt est dignissimos saepe.
+            </div>
+            <div class="content-item" id="content-node">
+                <h1>NODE JS Document</h1>
+                <img src="nodejs.jpg" alt="NodeJS Logo" id="nodejs-size">
+               <p> node js Lorem ipsum dolor sit amet. Est veniam odio sit quibusdam inventore est dolor alias. Qui delectus natus id reprehenderit temporibus ad voluptate facilis. In perspiciatis illum non similique sint ut Quis adipisci. Rem dolor libero sed nihil laboriosam ut iste dolor!
+                Ut culpa provident est veritatis fuga aut facilis consequatur ut quidem enim aut mollitia assumenda est itaque ratione vel magnam accusantium. Est impedit iure et magnam consequatur et eaque labore est voluptates deleniti. Non quia possimus et nostrum iure et dolor amet et numquam maxime. Quo repellat eius aut delectus deserunt est dignissimos saepe.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
